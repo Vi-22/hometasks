@@ -12,12 +12,10 @@ public class Task2 {
             if (userNumber == 0) {
                 System.out.println("Выход из программы");
                 break;
-            }
-            if (number == userNumber) {
+            } else if (number == userNumber) {
                 System.out.println("Вы угадали!");
                 break;
-            }
-            if (number < userNumber) {
+            } else if (number < userNumber) {
                 System.out.println("Загаданное число меньше");
             } else {
                 System.out.println("Загаданное число больше");
