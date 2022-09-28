@@ -9,7 +9,7 @@ public class Task1 {
         double cleanser = in.nextDouble();
         System.out.println("Введите количество тарелок");
         int plate = in.nextInt();
-        while (true) {
+        while (plate > 0 && cleanser > 0) {
             cleanser -= 0.5;
             plate--;
             if (plate == 0 || cleanser == 0) {
@@ -18,7 +18,6 @@ public class Task1 {
                 } else {
                     System.out.println("У вас кончилось моющее средство! Осталось грязных тарелок: " + plate);
                 }
-                break;
             }
         }
         in.close();
