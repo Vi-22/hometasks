@@ -21,5 +21,6 @@ public class Task2 {
                 System.out.println("Загаданное число больше");
             }
         }
+        in.close();
     }
 }

@@ -18,5 +18,6 @@ public class Task3 {
                 System.out.println("Ваше число: " + mid);
             }
         }
+        in.close();
     }
 }

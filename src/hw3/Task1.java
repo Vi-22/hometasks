@@ -9,7 +9,6 @@ public class Task1 {
         double cleanser = in.nextDouble();
         System.out.println("Введите количество тарелок");
         int plate = in.nextInt();
-        in.close();
         while (true) {
             cleanser -= 0.5;
             plate--;
@@ -22,5 +21,6 @@ public class Task1 {
                 break;
             }
         }
+        in.close();
     }
 }
