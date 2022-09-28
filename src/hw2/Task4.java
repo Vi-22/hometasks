@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Task4 {
     public static void main(String[] args) {
-        int a = (int) (Math.random() * 700); //т.к. медод возвращает число с плав.точкой от 0 до 1 увеличиваю диапазон до 700
+        int a = (int) (Math.random() * 700); //т.к. метод возвращает число с плав.точкой от 0 до 1 увеличиваю диапазон до 700
         System.out.println("Сгенерировано число: " + a);
         if ((a >= 10) && (a <= 500)) {
             System.out.println("Число относится к отрезку [10;500]");
