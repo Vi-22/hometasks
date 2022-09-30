@@ -12,12 +12,12 @@ public class Task1 {
         while (plate > 0 && cleanser > 0) {
             cleanser -= 0.5;
             plate--;
-            if (plate == 0 || cleanser == 0) {
-                if (plate == 0) {
-                    System.out.println("Вы помыли все тарелки! Осталось моющего средства: " + cleanser);
-                } else {
-                    System.out.println("У вас кончилось моющее средство! Осталось грязных тарелок: " + plate);
-                }
+        }
+        if (plate == 0 || cleanser == 0) {
+            if (plate == 0) {
+                System.out.println("Вы помыли все тарелки! Осталось моющего средства: " + cleanser);
+            } else {
+                System.out.println("У вас кончилось моющее средство! Осталось грязных тарелок: " + plate);
             }
         }
         in.close();
