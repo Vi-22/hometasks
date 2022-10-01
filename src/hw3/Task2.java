@@ -12,16 +12,15 @@ public class Task2 {
             if (userNumber == 0) {
                 System.out.println("Выход из программы");
                 break;
-            }
-            if (userNumber<1||userNumber>9) {
+            } else if (userNumber<1||userNumber>9) {
                 System.out.println("Это число не подходит. Введите число от 1 до 9");
             } else if (number == userNumber) {
                 System.out.println("Вы угадали!");
                 break;
-            }
-            if (number < userNumber) {
-                System.out.println("Загаданное число меньше");
             } else {
+                if (number < userNumber) {
+                System.out.println("Загаданное число меньше");
+                } else {
                 System.out.println("Загаданное число больше");
             }
         }
