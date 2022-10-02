@@ -13,10 +13,12 @@ public class Task4 {
             intsArray[i] = wordLength;
         }
         System.out.println("Получили массив из количества символов: " + Arrays.toString(intsArray));
-        int[] intsArrayForSort = intsArray.clone();
-        Arrays.sort(intsArrayForSort);
-        System.out.println("Отсортировали от меньшего к большему: " + Arrays.toString(intsArrayForSort));
-        int max = intsArrayForSort[intsArrayForSort.length - 1];
+        int max = intsArray[0];
+        for (int i = 0; i < intsArray.length; i++) {
+            if (intsArray[i] > max) {
+                max = intsArray[i];
+            }
+        }
         System.out.println("Самое длинное слово состоит из " + max + " символов");
         for (int i = 0; i < intsArray.length; i++) {
             if (max == intsArray[i]) {
@@ -24,6 +26,5 @@ public class Task4 {
                 break;
             }
         }
-
     }
 }

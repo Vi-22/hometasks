@@ -11,9 +11,18 @@ public class Task1 {
             sum += array1[i]; // сразу считаем сумму элементов массива
         }
         System.out.println("Вот такой массив: " + Arrays.toString(array1));
-        Arrays.sort(array1);
-        System.out.println("Минимальное значение: " + array1[0]);
-        System.out.println("Максимальное значение: " + array1[array1.length - 1]);
+        int max = array1[0];
+        int min = array1[0];
+        for (int i = 0; i < array1.length; i++) {
+            if (array1[i] > max) {
+                max = array1[i];
+            }
+            if (array1[i] < min) {
+               min = array1[i];
+               }
+            }
+        System.out.println("Минимальное значение: " + min);
+        System.out.println("Максимальное значение: " + max);
         System.out.println("Среднее арифметическое: " + (sum / array1.length));
     }
 }

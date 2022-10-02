@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
         int[] array1 = {5, -6, 49, -5, -38, 5, -48, 44, -593};
-        int amount = 0;
+        int negativeCount = 0;
         for (int index = 0; index < array1.length; index++) {
             if (array1[index] < 0) {
-                amount++;
+                negativeCount++;
             }
         }
-        int[] array2 = new int[amount];
+        int[] array2 = new int[negativeCount];
         int i2 = 0;
         for (int i1 = 0; i1 < array1.length; i1++) {
             if (array1[i1] < 0) {

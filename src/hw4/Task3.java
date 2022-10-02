@@ -10,7 +10,7 @@ public class Task3 {
         String[] stringsArray = new String[5];
         for (int i = 0; i < stringsArray.length;) {
             //этим циклом проверяем налич.места и команду выхода
-            boolean saveElement=true; //чтобы не писать лишний цикл ввела переменную
+            boolean isPresent=false; //чтобы не писать лишний цикл ввела переменную
             System.out.println("Вы можете ввести " + (stringsArray.length - i) +
                     " фраз. Введите фразу");
             String newElement = in.nextLine();
@@ -19,16 +19,16 @@ public class Task3 {
             } else {
                 for (String arrayElements : stringsArray) {//этим проверяем наличие аналогичного элемента в массиве
                     if (newElement.equals(arrayElements)) {
-                        saveElement=false; //чтобы не сохранять этот элемент и правильно прибавить счетчик
+                        isPresent=true; //чтобы не сохранять этот элемент и правильно прибавить счетчик
                     }
                 }
             }
-            if (saveElement) {
+            if (isPresent) {
+                System.out.println("Это уже записано");
+            } else {
                 System.out.println("Так и запишем: " + newElement);
                 stringsArray[i] = newElement;
                 i++;
-            } else {
-                System.out.println("Это уже записано");
             }
         }
         System.out.println("Выполнение программы завершено!");
