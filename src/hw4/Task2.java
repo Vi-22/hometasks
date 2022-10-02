@@ -15,7 +15,7 @@ public class Task2 {
         }
         System.out.println(Arrays.toString(array2));
         //вариант 2: развернуть цикл
-        for (int i = array2.length - 1; i > 0; i--) {
+        for (int i = array2.length - 1; i >= 0; i--) {
             array2[i] = min;
             min += 2;
         }
