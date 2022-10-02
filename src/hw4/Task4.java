@@ -8,9 +8,9 @@ public class Task4 {
         String[] stringsArray = string.split(" ");
         System.out.println("Получили массив из слов: " + Arrays.toString(stringsArray));
         int[] intsArray = new int[stringsArray.length];
-        for (int index = 0; index < stringsArray.length; index++) {
-            int wordLenght = stringsArray[index].length();
-            intsArray[index] = wordLenght;
+        for (int i = 0; i < stringsArray.length; i++) {
+            int wordLength = stringsArray[i].length();
+            intsArray[i] = wordLength;
         }
         System.out.println("Получили массив из количества символов: " + Arrays.toString(intsArray));
         int[] intsArrayForSort = intsArray.clone();
@@ -18,9 +18,9 @@ public class Task4 {
         System.out.println("Отсортировали от меньшего к большему: " + Arrays.toString(intsArrayForSort));
         int max = intsArrayForSort[intsArrayForSort.length - 1];
         System.out.println("Самое длинное слово состоит из " + max + " символов");
-        for (int wordIndex = 0; wordIndex < intsArray.length; wordIndex++) {
-            if (max == intsArray[wordIndex]) {
-                System.out.println("Это слово: " + stringsArray[wordIndex]);
+        for (int i = 0; i < intsArray.length; i++) {
+            if (max == intsArray[i]) {
+                System.out.println("Это слово: " + stringsArray[i]);
                 break;
             }
         }

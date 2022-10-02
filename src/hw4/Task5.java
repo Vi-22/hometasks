@@ -13,11 +13,11 @@ public class Task5 {
             }
         }
         int[] array2 = new int[amount];
-        int index2 = 0;
-        for (int index1 = 0; index1 < array1.length; index1++) {
-            if (array1[index1] < 0) {
-                array2[index2] = array1[index1];
-                index2++;
+        int i2 = 0;
+        for (int i1 = 0; i1 < array1.length; i1++) {
+            if (array1[i1] < 0) {
+                array2[i2] = array1[i1];
+                i2++;
             }
         }
         System.out.println(Arrays.toString(array2));

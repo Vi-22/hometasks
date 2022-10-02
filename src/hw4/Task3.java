@@ -8,10 +8,10 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String[] stringsArray = new String[5];
-        for (int index = 0; index < stringsArray.length;) {
+        for (int i = 0; i < stringsArray.length;) {
             //этим циклом проверяем налич.места и команду выхода
             boolean saveElement=true; //чтобы не писать лишний цикл ввела переменную
-            System.out.println("Вы можете ввести " + (stringsArray.length - index) +
+            System.out.println("Вы можете ввести " + (stringsArray.length - i) +
                     " фраз. Введите фразу");
             String newElement = in.nextLine();
             if (newElement.equals("exit")) {
@@ -25,8 +25,8 @@ public class Task3 {
             }
             if (saveElement) {
                 System.out.println("Так и запишем: " + newElement);
-                stringsArray[index] = newElement;
-                index++;
+                stringsArray[i] = newElement;
+                i++;
             } else {
                 System.out.println("Это уже записано");
             }
