@@ -7,8 +7,8 @@ public class Task5 {
     public static void main(String[] args) {
         int[] array1 = {5, -6, 49, -5, -38, 5, -48, 44, -593};
         int negativeCount = 0;
-        for (int index = 0; index < array1.length; index++) {
-            if (array1[index] < 0) {
+        for (int i = 0; i< array1.length; i++) {
+            if (array1[i] < 0) {
                 negativeCount++;
             }
         }
