@@ -5,6 +5,7 @@ public class Product {
     public String toString() {
         return name;
     }
+
     //свойства
     private String name;
     private double proteins;
@@ -68,28 +69,35 @@ public class Product {
         this.fats = fats;
         this.carbohydrates = carbohydrates;
     }
+
     public void printProduct() {
         System.out.println(name);
     }
+
     public void setName(String name) {
         if (name == null) {
             throw new IllegalArgumentException("Название не может быть null");
         }
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
-    public double getCalories(){
+
+    public double getCalories() {
         return calories;
     }
-    public double getProteins () {
+
+    public double getProteins() {
         return proteins;
     }
-    public double getFats (){
+
+    public double getFats() {
         return fats;
     }
-    public double getCarbohydrates () {
+
+    public double getCarbohydrates() {
         return carbohydrates;
     }
 }

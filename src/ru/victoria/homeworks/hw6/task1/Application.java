@@ -1,4 +1,5 @@
 package ru.victoria.homeworks.hw6.task1;
+
 import ru.victoria.homeworks.hw6.task1.products.Product;
 import ru.victoria.homeworks.hw6.task1.products.MyProducts;
 
