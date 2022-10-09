@@ -68,8 +68,9 @@ public class Character {
 
     public void setKilledMice(int killedMice) {
         this.killedMice = killedMice;
-        if (killedMice>=100);
-        this.killedMice =100;
+        if (killedMice>=100) {
+            this.killedMice =100;
+        }
     }
 
 
